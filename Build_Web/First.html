@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Web</title>
+    <style>
+        body{
+            background-color: #282923;
+            text-decoration: none;
+            list-style: none;
+        }
+        *{
+            text-decoration: none;
+            list-style-type: none;
+            color: white;
+            padding: 0rem;
+            margin: 0rem;
+        }
+        .nav{
+            background-color: black;
+            display: flex;
+            justify-content: space-between;
+            height: 4em;
+            line-height: 4em;
+        }
+        .logo{
+            margin-left: 6em;
+            font-size: 2em;
+        }
+        .menu{
+            display: flex;
+        }
+        .menu li a:hover{
+            color: #e83e8c;
+            transition: color .3s ease-out;
+        }
+        .menu li{
+            padding-right: 3em;
+        }
+        .menu_down{
+            display: none;
+            background-color: black;
+            margin-top: 0px;
+            position: absolute;
+            width: 10em;
+        }
+        .menu_down li{
+            padding: 0px;
+            width: 20px;
+            right: 3em;
+            text-align: center;
+            margin-left: 2em;
+        }
+        .menu_down li a:hover{
+            color: #e83e8c;
+        }
+        .menu .menu_link:hover .menu_down{ 
+            color: #e83e8c;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="#" class="logo">Hazze.</a>
+        <ul class = "menu">
+            <li><a href="#"> Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#"> Blog</a></li>
+            <li class="menu_link">
+                <a href="#">Gallery</a>
+                <ul class="menu_down">
+                    <li> <a href="#">Menu1</a></li>
+                    <li> <a href="#">Menu2</a></li>
+                    <li> <a href="#">Menu3</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+</body>
+</html>
