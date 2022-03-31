@@ -1,0 +1,11 @@
+.avatar{
+    float: right;
+    margin-right: 800px;
+}
+html{
+    margin-left: 100px;
+}
+#id1{
+    font-style: oblique;
+    background-color: #55E6C1;
+}
